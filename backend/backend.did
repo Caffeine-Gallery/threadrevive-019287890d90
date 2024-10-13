@@ -1,0 +1,15 @@
+type Project = 
+ record {
+   description: text;
+   downvotes: nat;
+   id: nat;
+   materials: vec text;
+   title: text;
+   upvotes: nat;
+ };
+service : {
+  addProject: (text, text, vec text) -> (nat);
+  downvoteProject: (nat) -> (bool);
+  getAllProjects: () -> (vec Project) query;
+  upvoteProject: (nat) -> (bool);
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcycle Clothing</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Upcycle Clothing</h1>
+    </header>
+    <main>
+        <section id="add-project">
+            <h2>Add New Project</h2>
+            <form id="project-form">
+                <input type="text" id="title" placeholder="Project Title" required>
+                <textarea id="description" placeholder="Project Description" required></textarea>
+                <input type="text" id="materials" placeholder="Materials (comma-separated)" required>
+                <button type="submit">Add Project</button>
+            </form>
+        </section>
+        <section id="projects-list">
+            <h2>Upcycled Projects</h2>
+            <div id="projects-container"></div>
+        </section>
+    </main>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
